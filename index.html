@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Teja Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">VARUN TEJA</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="intro-container">
+            <div class="intro-text">
+                <h1>I am Varun Teja</h1>
+                <h2>I am a software tester</h2>
+                <p>"An enthusiastic coader"</p>
+            </div>
+            <div class="intro-image">
+                <img src="h.jpg" alt="Varun Teja">
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2><br><br>
+            <p>
+                Hi there! I'm Varun Teja, a committed learner and future software tester who has a strong interest in coding. I first became interested in technology because I loved playing video games as a kid and I found the design and functionality of these games to be exciting. My interest in software development came from this curiosity, with a focus on making sure that software not only functions effectively but also offers users a smooth experience.
+            </p>
+            <p>
+                I can go into the details, identify any problems, and add to the development of applications that work through testing. Apart from testing, I like to code because it allows me to learn about software architecture and study the reasoning behind apps. Coding and testing together improve my problem-solving abilities and improve my understanding of the full development lifecycle.
+            </p>
+            <p>
+                I'm eager to maintain improving my technical skills and am dedicated to lifelong learning. I'm excited to contribute the same curiosity and commitment that inspired my career to the software development industry.
+            </p>
+        </div>
+    </section>
+    
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>Diploma in Civil Engineering</h3>
+                <p>Usha Rama Engineering College</p>
+                <p class="details">2014-2017 | Andhra Pradesh, India</p>
+            </div>
+            <div class="education-item">
+                <h3>Under Graduation in Computer Science</h3>
+                <p>SRKR Engineering College</p>
+                <p class="details">2017-2021 | Andhra Pradesh, India</p>
+            </div>
+            <div class="education-item">
+                <h3>PG Diploma in Software Testing</h3>
+                <p>Cégep de la Gaspésie et des Îles</p>
+                <p class="details">2023-2025 | Quebec, Canada</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <label>HTML</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <label>CSS</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <label>JavaScript</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;">60%</div>
+            </div>
+        </div>
+        <div class="skill">
+            <label>React</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;">60%</div>
+            </div>
+            <div class="skill">
+                <label>Python</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;">40%</div>
+                </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('html-css')">HTML & CSS</button>
+            <button onclick="filterProjects('react')">React</button>
+            <button onclick="filterProjects('automated-testing')">Automated Testing</button>
+            <button onclick="filterProjects('manual-testing')">Manual Testing</button>
+        </div>
+    
+        <div class="projects-container" id="projectsContainer">
+            <div class="project-card html-css">
+                <img src="arthi.png" alt="HTML & CSS Project Screenshot">
+                <h3>HTML & CSS Project</h3>
+                <p>It is a photography website which is dear to me.</p>
+                <a href="https://github.com/varunteja436/arthi.git" >View on GitHub</a>
+            </div>
+            
+            <div class="project-card react">
+                <img src="jv.png" alt="React Project Screenshot">
+                <h3>React Project</h3>
+                <p>It is my first React project.</p>
+                <a href="https://github.com/varunteja436/Jv-institute-.git" >View on GitHub</a>
+            </div>
+            
+            <div class="project-card automated-testing">
+                <img src="vrv.png" alt="Automated Testing Project Screenshot">
+                <h3>Automated Testing Project</h3>
+                <p>This is my first Automated Testing project where I used selenium.</p>
+                <a href="https://github.com/Reva1402/VRV_Events.git" >View on GitHub</a>
+            </div>
+            
+            <div class="project-card manual-testing">
+                <img src="ilo.png" alt="Manual Testing Project Screenshot">
+                <h3>Manual Testing Project</h3>
+                <p>This is my first Manual Testing project in my college. Contact me if you want to know more about it.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

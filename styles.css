@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #89ef90;
+    color: #fff;
+    padding: 10px ;
+    
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px   ; 
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left ;
+}
+
+.intro-text h1 {
+    font-size: 37px;
+    margin-bottom: 2px;
+    color: #333;
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    margin-bottom: 2px;
+    color: #555;
+}
+
+.intro-text p {
+    font-size: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 160%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px; 
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9; 
+}
+
+.about-content {
+    max-width: 800px; 
+    color: #333; 
+}
+
+.about-content p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#education {
+    padding: 50px;
+    text-align: center;
+    background-color: #b8dee9;
+}
+
+#education h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.education-container {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+
+.education-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 300px;
+}
+
+.education-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.education-item p {
+    color: #666;
+    font-size: 16px;
+}
+
+.education-item .details {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+
+
+#skills {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#skills h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.skill label {
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progress {
+    background-color: #3bd741;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+#projects {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+#projects h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+.filter-buttons button:hover {
+    background-color: #555;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+#contact {
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9; 
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #661111;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #924c4c;
+}
