@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Teja Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("84925Ns-t5CXdH-I-");
+    </script>
 </head>
 <body>
 
@@ -80,36 +84,22 @@
 
     <section id="skills">
         <h2>My Skills</h2>
-        <div class="skill">
-            <label>HTML</label>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;">80%</div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Languages</h3>
+                <div class="skill-box">HTML</div>
+                <div class="skill-box">CSS</div>
+                <div class="skill-box">JavaScript</div>
+                <div class="skill-box">Python</div>
             </div>
-        </div>
-        <div class="skill">
-            <label>CSS</label>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;">80%</div>
+    
+            <div class="skills-category">
+                <h3>Frontend</h3>
+                <div class="skill-box">React</div>
             </div>
-        </div>
-        <div class="skill">
-            <label>JavaScript</label>
-            <div class="progress-bar">
-                <div class="progress" style="width: 60%;">60%</div>
-            </div>
-        </div>
-        <div class="skill">
-            <label>React</label>
-            <div class="progress-bar">
-                <div class="progress" style="width: 60%;">60%</div>
-            </div>
-            <div class="skill">
-                <label>Python</label>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 40%;">40%</div>
-                </div>
         </div>
     </section>
+    
     
 
     <section id="projects">
@@ -156,22 +146,34 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm" >
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-    
+            <input type="text" name="name" placeholder="Your Name" required />
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
-    
+            <input type="email" name="email" placeholder="Your Email" required />
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-    
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
-        </form>
-    </section>
+          </form>
+          
+    </section></div>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+          emailjs.sendForm("service_74j4m3q", "template_8zqqmudD", this, "84925Ns-t5CXdH-I-")
+            .then(
+              (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Your message has been sent!");
+              },
+              (error) => {
+                console.error("FAILED...", error);
+                alert("Failed to send the message. Please try again.");
+              }
+            );
+        });
+      </script>
     
     <script src="script.js"></script>
 </body>
