@@ -1,23 +1,29 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding-top: 60px;
+    padding-top: 80px;
+    margin: 0;
 }
 
 header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #89ef90;
     color: #fff;
-    padding: 10px ;
-    
+    padding: 10px 20px;
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
 .header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -49,38 +55,28 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}
-
 .intro-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    flex-direction: column;
+    padding: 80px 20px;
     max-width: 900px;
     margin: 0 auto;
-    gap: 20px   ; 
+    gap: 20px;
 }
 
 .intro-text {
-    flex: 1;
-    text-align: left ;
+    text-align: center;
 }
 
 .intro-text h1 {
     font-size: 37px;
-    margin-bottom: 2px;
     color: #333;
 }
 
 .intro-text h2 {
     font-size: 24px;
-    margin-bottom: 2px;
     color: #555;
 }
 
@@ -90,13 +86,9 @@ p {
     color: #666;
 }
 
-.intro-image {
-    flex: 1;
-}
-
 .intro-image img {
-    width: 160%;
-    max-width: 600px; 
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
 }
@@ -105,20 +97,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 800px; 
+    height: 800px;
     padding: 20px;
     text-align: center;
-    background-color: #f4f4f9; 
+    background-color: #f4f4f9;
 }
 
 .about-content {
-    max-width: 800px; 
-    color: #333; 
+    max-width: 800px;
+    color: #333;
 }
 
 .about-content p {
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
 #education {
@@ -129,14 +120,14 @@ p {
 
 #education h2 {
     font-size: 35px;
-    margin-bottom: 35px;
     color: #333;
 }
 
 .education-container {
     display: flex;
-    gap: 200px;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .education-item {
@@ -144,27 +135,19 @@ p {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 25px;
-    max-width: 300px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .education-item h3 {
     font-size: 20px;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .education-item p {
     color: #666;
     font-size: 16px;
 }
-
-.education-item .details {
-    font-size: 14px;
-    color: #888;
-    margin-top: 10px;
-}
-
-
 
 #skills {
     padding: 20px;
@@ -174,34 +157,40 @@ p {
 
 #skills h2 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #333;
 }
 
-.skill {
-    margin: 20px 0;
-    text-align: left;
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
 }
 
-.skill label {
-    font-weight: bold;
-    margin-bottom: 15px;
-    display: inline-block;
-}
-
-.progress-bar {
+.skills-category {
     width: 100%;
-    background-color: #ddd;
-    border-radius: 10px;
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
-.progress {
-    background-color: #3bd741;
-    color: white;
-    padding: 8px;
+.skills-category h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skill-box {
+    background-color: #ddd; 
+    color: #333; 
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    display: inline-block;
     text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
+    width: fit-content;
 }
 
 
@@ -213,7 +202,6 @@ p {
 
 #projects h2 {
     font-size: 25px;
-    margin-bottom: 15px;
     color: #333;
 }
 
@@ -241,16 +229,17 @@ p {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    gap: 20px;
 }
 
 .project-card {
-    width: 300px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
+    width: 100%;
+    max-width: 300px;
     text-align: left;
 }
 
@@ -264,24 +253,18 @@ p {
 .project-card h3 {
     font-size: 20px;
     margin: 0 0 10px;
-    color: #333;
 }
 
 .project-card p {
     color: #666;
     font-size: 15px;
-    margin-bottom: 20px;
 }
-
-
-
-
-
 
 #contact {
     padding: 30px;
     text-align: center;
     background-color: #f9f9f9; 
+
 }
 
 #contact h2 {
@@ -291,11 +274,16 @@ p {
 }
 
 .contact-form {
+    width: 95%;
     max-width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
@@ -306,7 +294,7 @@ p {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 95%;
     padding: 12px;
     font-size: 14px;
     border: 1px solid #ddd;
@@ -315,7 +303,7 @@ p {
 
 .contact-form button {
     padding: 15px;
-    font-size: 15px;
+    font-size: 15px;    
     font-weight: bold;
     color: white;
     background-color: #661111;
@@ -325,4 +313,53 @@ p {
 
 .contact-form button:hover {
     background-color: #924c4c;
+}
+
+
+
+@media (min-width: 768px) {
+    .intro-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .intro-image img {
+        max-width: 400px;
+    }
+    .skills-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .skills-category {
+        width: 45%;
+    }
+
+    .education-container {
+        gap: 50px;
+    }
+
+    .projects-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro-container {
+        padding: 80px;
+    }
+
+    .intro-image img {
+        max-width: 600px;
+    }
+
+    .education-container {
+        gap: 100px;
+    }
+
+    .project-card {
+        width: 45%;
+    }
 }
