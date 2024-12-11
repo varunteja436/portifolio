@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Teja Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        emailjs.init("84925Ns-t5CXdH-I-");
-    </script>
 </head>
 <body>
 
@@ -33,13 +29,18 @@
             <div class="intro-text">
                 <h1>I am Varun Teja</h1>
                 <h2>I am a software tester</h2>
-                <p>"An enthusiastic coader"</p>
+                <p>"An enthusiastic coder"</p>
             </div>
             <div class="intro-image">
                 <img src="h.jpg" alt="Varun Teja">
             </div>
         </div>
+        <div class="resume-buttons">
+            <a href="Myresume.pdf" target="_blank" class="btn view-btn">View Resume</a>
+            <a href="Myresume.pdf" download class="btn download-btn">Download Resume</a>
+        </div>
     </section>
+    
     
     
 
@@ -144,36 +145,33 @@
     </section>
     
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form class="contact-form" id="contactForm" >
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Your Name" required />
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Your Email" required />
-            <label for="message">Message</label>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-          </form>
-          
-    </section></div>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Have questions or want to work together? Fill out the form below, and I'll get back to you soon!</p>
+            <form action="https://formsubmit.co/varuntej436@gmail.com" method="POST">
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
 
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-          e.preventDefault();
-          emailjs.sendForm("service_74j4m3q", "template_8zqqmudD", this, "84925Ns-t5CXdH-I-")
-            .then(
-              (response) => {
-                console.log("SUCCESS!", response.status, response.text);
-                alert("Your message has been sent!");
-              },
-              (error) => {
-                console.error("FAILED...", error);
-                alert("Failed to send the message. Please try again.");
-              }
-            );
-        });
-      </script>
+
+   
+
     
     <script src="script.js"></script>
 </body>

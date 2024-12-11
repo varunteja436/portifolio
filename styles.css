@@ -93,6 +93,36 @@ section {
     border-radius: 8px;
 }
 
+
+.resume-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resume-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-buttons .view-btn {
+    background-color: #007BFF; 
+}
+
+.resume-buttons .download-btn {
+    background-color: #28A745;
+}
+
+.resume-buttons .btn:hover {
+    opacity: 0.9;
+}
+
 #about {
     display: flex;
     align-items: center;
@@ -259,61 +289,79 @@ section {
     color: #666;
     font-size: 15px;
 }
-
 #contact {
-    padding: 30px;
+    padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9; 
-
+    background-color: #f9f9f9;
 }
 
 #contact h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 20px;
     color: #333;
 }
 
-.contact-form {
-    width: 95%;
+#contact p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container form {
+    width: 100%;
     max-width: 500px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form label {
+.contact-container label {
     font-weight: bold;
     color: #555;
     text-align: left;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 95%;
+.contact-container input,
+.contact-container textarea {
+    width: 90%;
     padding: 12px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-.contact-form button {
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #661111;
+}
+
+.contact-container button {
     padding: 15px;
-    font-size: 15px;    
+    font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: #fff;
     background-color: #661111;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
+.contact-container button:hover {
     background-color: #924c4c;
 }
+
 
 
 
